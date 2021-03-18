@@ -107,51 +107,6 @@
 
     </div> 
 
-
-<!--
-    <div class="lists-wrapper">
-        <h4>TODO LISTS</h4>
-        <form action="/lists/create" method="POST" id="list-form">
-          <label for="todolist">Create List:</label>
-          <input type="text" name="todolist" id="todolist-input" placeholder="A new List" data-id="{{ active_list.id }}"/>
-          <button type="submit">Create List</button>
-        </form>        
-      <ul id="lists">
-        {% for list in lists %}
-        <li>
-          <input type="checkbox" data-id="{{ list.id }}" class="list-check-complete">
-          <a href="/lists/{{ list.id }}">{{ list.name }}</a>
-          <button class="delete-list" data-id="{{ list.id }}">&cross;</button>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="todos-wrapper">      
-      <h4>TODO ITEMS</h4>
-      <form action="/todos/create" method="POST" id="todo-form">
-        <input id="list_id" type="hidden" value="{{ active_list.id }}">
-        <label for="description">Create Task:</label>
-        <input id="description" type="text" name="description" placeholder="Task description"  />
-        <button type="submit">Create Task</button>
-      </form>
-      <div id="error" class="hidden">
-        An error occurred, please try again.
-      </div>   
-        <h4>{{ active_list.name }}</h4>
-        <ul id="todos">
-          {% for todo in todos %}
-          <li>
-            <input data-id="{{ todo.id }}" class="todo-check-complete" type="checkbox" name="complete" id="complete" {% if todo.complete %} checked {%endif%} />
-            {{ todo.description }}
-            <button class="delete-todo" data-id="{{ todo.id }}">&cross;</button>
-          </li>
-          {% endfor %}
-        </ul>
-    </div>
-  
--->
-
     <script>
       let deleteBtns;
       const listCheckboxes = document.querySelectorAll('.list-check-complete');
