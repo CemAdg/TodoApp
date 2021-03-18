@@ -1,2 +1,4 @@
 debug.log
-credentials.yml
+settings/credentials.yml
+__pycache__/
+.vscode/

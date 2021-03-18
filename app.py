@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 # load yml file to directory and access values from directory
-credentials = yaml.load(open('.credentials.yml'))
+credentials = yaml.load(open('settings/credentials.yml'))
 username = credentials['database']['username']
 password = credentials['database']['password']
 hostname = credentials['database']['hostname']
